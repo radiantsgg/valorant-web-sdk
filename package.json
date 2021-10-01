@@ -20,7 +20,7 @@
     "typescript": "~4.4.2"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=14"
   },
   "keywords": [
     "typescript",
