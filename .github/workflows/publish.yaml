@@ -5,7 +5,7 @@ on:
     types: [published]
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest 
     permissions: 
       contents: read
@@ -22,7 +22,7 @@ jobs:
       - run: npm install
       - run: curl https://valorant.api.radiants.gg/v1/api-json --output openapi.json
       - run: npm run generate
+      - run: npm run build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
