@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-          with:
+        with:
           registry-url: https://npm.pkg.github.com/
           node-version: 14.x
           scope: '@radiantsgg'
