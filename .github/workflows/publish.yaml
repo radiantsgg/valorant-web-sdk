@@ -5,9 +5,12 @@ on: push
   #   types: [published]
 
 jobs:
-  build:
-    name: Build Image
-    runs-on: ubuntu-20.04
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest 
+    permissions: 
+      contents: read
+      packages: write
 
     steps:
       - name: Checkout

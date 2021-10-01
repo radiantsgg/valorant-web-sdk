@@ -26,11 +26,6 @@
     "valorant",
     "api"
   ],
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@github.com/radiantsgg/valorant-web-sdk.git",
-    "directory": "@radiantsgg/valorant-web-sdk"
-  },
   "author": "",
   "license": "ISC",
   "bugs": {
