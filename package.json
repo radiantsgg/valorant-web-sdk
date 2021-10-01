@@ -6,8 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "generate": "swagger-typescript-api --axios -o ./src -n index.ts",
-    "deploy": "npm publish"
+    "generate": "swagger-typescript-api --axios -p ./openapi.json -o ./src -n index.ts"
   },
   "dependencies": {
     "axios": "^0.21.2"
@@ -20,18 +19,13 @@
     "typescript": "~4.4.2"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=14"
   },
   "keywords": [
     "typescript",
     "valorant",
     "api"
   ],
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@github.com/radiantsgg/valorant-web-sdk.git",
-    "directory": "@radiantsgg/valorant-web-sdk"
-  },
   "author": "",
   "license": "ISC",
   "bugs": {
