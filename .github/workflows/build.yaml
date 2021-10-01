@@ -33,7 +33,7 @@ jobs:
           npm run generate
 
       - name: Publish
+      - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        run: |
-          npm run deploy
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
