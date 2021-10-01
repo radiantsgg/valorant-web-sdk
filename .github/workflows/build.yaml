@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+          with:
+          registry-url: https://npm.pkg.github.com/
+          node-version: 14.x
+          scope: '@radiantsgg'
 
       - name: Setup Node
         uses: actions/setup-node@v1
