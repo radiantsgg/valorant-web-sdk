@@ -1,0 +1,35 @@
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    name: Build Image
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+
+      - name: Install dependancies
+        run: |
+          npm ci
+
+      - name: Fetch openapi.json
+        run: |
+          curl https://valorant.api.radiants.gg/v1/api-json --output openapi.json
+
+      - name: Generate definition
+        run: |
+          npm run generate -- -p ./openapi.json
+
+      - name: Publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        run: |
+          npm run deploy

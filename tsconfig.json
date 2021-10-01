@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "lib": ["es2017", "DOM"],
+      "module": "commonjs",
+      "noImplicitReturns": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": true,
+      "outDir": "dist",
+      "sourceMap": true,
+      "target": "es5",
+      "declaration": true,
+      "types": [
+        "node"
+      ]
+    },
+    "compileOnSave": true,
+    "include": [
+      "src"
+    ]
+  }
