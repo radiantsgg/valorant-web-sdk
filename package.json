@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "generate": "swagger-typescript-api --axios -o ./src -n index.ts",
+    "generate": "swagger-typescript-api --axios -p ./openapi.json -o ./src -n index.ts",
     "deploy": "npm publish"
   },
   "dependencies": {

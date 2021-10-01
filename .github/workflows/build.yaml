@@ -1,8 +1,8 @@
 name: Publish
 
-on:
-  release:
-    types: [published]
+on: push
+  # release:
+  #   types: [published]
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
 
       - name: Generate definition
         run: |
-          npm run generate -- -p ./openapi.json
+          npm run generate
 
       - name: Publish
         env:
