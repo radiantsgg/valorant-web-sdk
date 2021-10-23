@@ -9,7 +9,7 @@
     "generate": "swagger-typescript-api --axios -p ./openapi.json -o ./src -n index.ts"
   },
   "dependencies": {
-    "axios": "^0.22.0"
+    "axios": "^0.23.0"
   },
   "devDependencies": {
     "@types/node": "^16.7.9",
