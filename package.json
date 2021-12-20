@@ -12,7 +12,7 @@
     "axios": "^0.24.0"
   },
   "devDependencies": {
-    "@types/node": "^16.7.9",
+    "@types/node": "^17.0.1",
     "swagger-typescript-api": "^9.2.0",
     "ts-node": "^10.2.1",
     "tslint": "^6.1.3",
